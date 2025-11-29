@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bronze_layer
+    schema: bronze_layer
+    tables:
+      - name: raw_activity
+      - name: raw_customer
+      - name: raw_product
+      - name: raw_salesperson
+      - name: raw_lead
+      - name: raw_sale
