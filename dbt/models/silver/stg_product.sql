@@ -1,7 +1,8 @@
 {{ config(
     materialized='incremental',
     unique_key='product_key',
-    incremental_strategy='merge'
+    incremental_strategy='merge',
+    schema='silver_layer'
 ) }}
 
 with

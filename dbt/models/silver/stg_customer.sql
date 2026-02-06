@@ -1,7 +1,8 @@
 {{ config(
     materialized='incremental',
     unique_key='id',
-    incremental_strategy='merge'
+    incremental_strategy='merge',
+    schema='silver_layer'
 ) }}
 WITH
     source_data

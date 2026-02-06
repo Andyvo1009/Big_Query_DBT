@@ -1,0 +1,13 @@
+odoo_crm:
+  target: prod
+  outputs:
+    prod:
+      type: bigquery
+      method: service-account
+      keyfile: /home/airflow/gcs/data/keys/odoo-crm-479010-c2d71f6cb491.json
+      project: odoo-crm-479010
+      dataset: odoo_crm
+      job_execution_timeout_seconds: 600
+      job_retries: 2
+      threads: 10
+      location: US

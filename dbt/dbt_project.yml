@@ -33,12 +33,7 @@ models:
     models:
       bronze:
         +schema: bronze_layer
-        +materialized: table
-
       silver:
         +schema: silver_layer
-        +materialized: table
-
       gold:
         +schema: gold_layer
-        +materialized: table

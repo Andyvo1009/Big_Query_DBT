@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: dim_product
+    columns:
+      - name: product_key
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+      - name: list_price
+        tests:
+          - not_null
+
+  - name: fact_lead
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_salesperson
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: email
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_customer
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: fact_activity
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: fact_sale_order
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      

@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: stg_product
+    columns:
+      - name: product_key
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+      - name: list_price
+        tests:
+          - not_null
+
+  - name: stg_lead
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+          
+  - name: stg_salesperson
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: email
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_customer
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_activity
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_sale_order
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      

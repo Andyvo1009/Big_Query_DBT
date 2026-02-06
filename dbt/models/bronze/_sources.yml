@@ -9,4 +9,4 @@ sources:
       - name: raw_product
       - name: raw_salesperson
       - name: raw_lead
-      - name: raw_sale
+      - name: raw_saleorder
